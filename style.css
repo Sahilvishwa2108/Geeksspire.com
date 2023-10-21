@@ -47,7 +47,7 @@ body {
     display: inline-block;
     margin-bottom: 55px;
     
-      font-size: 50px;
+      font-size: 3rem;
       
 }
 
@@ -195,4 +195,69 @@ footer{
 .footer2 {
     color: rgb(203, 203, 203);
     padding: 8px;
+}
+
+/* working on responsiveness */
+@media(max-width:600px){
+    main{
+        text-align: center;
+    }
+    .animate-character{
+        font-size: 2rem;
+        word-wrap: wrap;
+        /* justify-self: center; */
+    }
+    .container .animate-character{
+        margin-top: 10rem;
+    }
+    .graphic-design-card{
+        display: flex;
+        word-wrap: wrap;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        margin: 1rem 0.5rem;
+        padding: 0.5rem 0.5rem;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .graphic-design-card img{
+        height: 20rem;
+        width: 20rem;
+        align-items: center;
+    }
+    .graphic-design-card-article{
+        display: flex;
+        align-items: center;
+        width: auto;
+        /* margin-bottom: 5rem; */
+    }
+    .footer1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .navlinkverticalcol1{
+        display: none;
+    }
+    .col-md-12{
+        text-align: center;
+    }   
+    .contact-container{
+        flex-wrap: wrap;
+        margin: 0;
+    }
 }
