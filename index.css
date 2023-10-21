@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#particles-js{
+    position: fixed;
+    height: 100%;
+    z-index: -99;
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+.nav-logo img{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.nav-right ul{
+    list-style: none;
+    display: flex;
+}
+.nav-right ul li{
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 99;
+    text-shadow: 0 1px 1px white;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: white;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+.main-content{
+    padding: 18rem 0;
+    margin-right: 2rem;
+    color: white;
+}
+.main-line{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.main-line #element1{
+    color: aqua;
+}
+.main-line p{
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    opacity: 0.8;
+}
+
+.main-buttons button{
+    padding: 0.25rem 0.5rem;
+    margin: 2rem 2rem;
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    border-radius: 1rem 1rem;
+    background-color: aquamarine;
+    color: black;
+    font-size: 1rem;
+}
+.main-buttons button:hover{
+    color: black;
+    background-color: white;
+    border: 0.15rem solid purple;
+}
+.main-image{
+    height: 20rem;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.main-image img{
+    height: inherit;
+    margin-bottom: 2rem;
+}
+.services-container{
+    color: #fff;
+}
+.services-container p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 4rem;
+    padding: 1rem 0.5rem;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service-border{
+    background: none;
+    transition: background 0.5s ease-in-out 0s;
+}
+.service-border:hover{
+    padding: 2px;
+    background: linear-gradient(#14ffe9,#ffeb3b,#00bfff);
+    border-radius: 1.5rem;
+}
+.service{
+    height: 20rem;
+    width: 18rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+.service-image{
+    overflow: hidden;
+}
+.service-image img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 20rem;
+    width: 18rem;
+    transition: transform 0.4s ease-in 0s;   
+}
+.service:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.service:hover .service-image{
+    overflow: hidden;
+}
+.service span{
+    padding: 0.75rem 0;
+    position: relative;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255,255,255,0.7);
+}
+.social a img{
+    opacity: 0.4;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem 1rem;
+}
+.social a .linkedin{
+    /* height: 9rem;
+    width: 9rem;
+    padding-top: 0.5rem; */
+    transform: scale(1.15);
+}
+
+/***********Careers***************/
+
+#careers-container-id{
+    margin-top: 14rem;
+}
+.careers-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+    font-size: 25px;
+    color: rgba(255,255,255,0.7);
+    margin-left: 1rem;
+    width: 100%;
+   
+}
+.careers-container img{
+    height: 30rem;
+    border: 1px solid white;
+    border-radius: 40px;
+    scale: 80%;
+}
+.careers-text{
+    position: relative;
+    width: 840px;
+
+    overflow-y: hidden;
+}
+.careers-text p{
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.careers-text i{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.careers-text img{
+    height: 100%;
+    width: 28%;
+}
