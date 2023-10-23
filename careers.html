@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="careers.css">
     <link rel="icon" href="Assets/favicon.png">
 </head>
 
@@ -18,11 +21,11 @@
     <header>
         <nav class="nav-bar">
             <div class="nav-logo" id="home">
-                <a onClick="scrollToHome()"><img src="Assets/Logo.png" alt=""></a>
+                <a href="index.html"><img src="Assets/Logo.png" alt=""></a>
             </div>
             <div class="nav-right">
                 <ul>
-                    <li><a onClick="scrollToHome()">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -35,69 +38,61 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 ">
-                    <h1 style="margin-top: 10rem; margin-left: 4rem;" class="animate-character" style="text-indent: 1.5em; font-family: sans-serif; ">Careers 
+                    <h1 class="animate-character">Careers
                     </h1>
                 </div>
             </div>
         </div>
-
+        <div class="careers-text"><p>At Geeksspire, we are on a mission to provide the best software development services to our clients. Our secret
+            ingredient is our incredible team, who are passionate about innovation and dedicated to excellence. Join us in
+            shaping the future of technology!</p></div>
     </div>
-    <div style="margin-top: 2rem;" class="careers-container" id="careers-container-id"><img
-            src="Assets/careers-generic.jpg"
-            alt="">
-        <div class="careers animate-character">
+    <div class="careers-container" id="careers-container-id"><img src="Assets/careers-generic.jpg" alt="">
+        <div class="careers-form">
             <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+
+                <legend class="caption animate-character">Join us: </legend>
+
                 <fieldset>
-                  <legend>Join us</legend>
-                
-                </fieldset>
+                    <div class="info">
+                        <label for="name">
+                            Full name:
+                            <input type="text" id="name" name="First name" required>
+                        </label>
+
+                    </div>
+                    <div class="info">
+                        <label>
+                            Phone:
+                            <input type="tel" id="phone" name="Phone" required>
+                        </label>
+                    </div>
+                    <div class="info">
+                        <label>
+                            Email address:
+                            <input type="email" id="email" name="Email" required>
+                        </label>
+                    </div>
+                </fieldset><br>
                 <fieldset>
-                  <legend>Personal info</legend>
-                  <div class="two-cols">
-                    <label>
-                      Full name *
-                      <input type="text" name="First name" required>
-                    </label>
-                   
-                  </div>
-                  <div class="two-cols">
-                    <label>
-                      Phone *
-                      <input type="tel" name="Phone" required>
-                    </label><br>
-                    <label>
-                      Email address *
-                      <input type="email" name="Email" required>
-                    </label>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <legend>Application documents</legend>
-                  <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
-                  <div class="two-cols">
-                   
-                    <label>
-                      Curriculum vitae
-                      <input type="file" name="Curriculum vitae" accept=".doc,.docx,.pdf">
-                    </label>
-                  </div>
-                  <p>Possible file types: DOC, PDF. 
-                    <br> Maximum file size: 10 MB.</p>
+                    <legend class="caption">Application documents</legend>
+                    <input type="hidden" name="MAX_FILE_SIZE" value="2480000">
+                    <div class="info">
+
+                        <label for="cv">
+                            Curriculum vitae
+                            <input class="file-button" type="file" id="cv" name="Curriculum vitae"
+                                accept=".doc,.docx,.pdf">
+                        </label>
+                    </div>
+                    <p>Possible file types: DOC, PDF. <br> Maximum file size: 2 MB.</p>
                 </fieldset>
                 <div class="btns">
-                  
-                  <input type="submit" name="Submit"  
-                  style="
-                  
-                    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.375rem;
-    border-width: 1px;
-    border-color: #0000; font-size: 25px;  width: 14% ;height:25px; margin-top: 15px; overflow: hidden;">
+
+                    <input type="button" id="submit-button" class="button" value="Submit">
                 </div>
-              </form>
-          
+            </form>
+
         </div>
     </div>
     <footer>
@@ -105,8 +100,15 @@
             <div class="navbacktotop"><a href="index.html">Back to top</a></div>
             <div class="navlinkverticalcol">
                 <div class="footer-logo">
-                    <img src="/Assets/Logo.png" style="height: 8rem; width: 8rem; margin-top: 1rem;" alt="">
+                    <img src="/Assets/Logo.png"  alt="">
+                    <div class="social">
+                        <a href="https://instagram.com/geeksspire"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VaAQ6BdIiRp0P0NbhF15"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/geeksspire/"><i class="fa fa-linkedin"aria-hidden="true"></i></a>
+                    </div>
                 </div>
+                
                 <div class="navlinkverticalcol1 col-1">
                     <div class="col-ele-head">Our Services</div>
                     <div class="col-ele"><a href="#services">Web-development
@@ -145,13 +147,6 @@
 
             </div>
             <div class="footer2">
-                <div class="social">
-                    <a href="https://instagram.com/geeksspire"><img src="Assets/insta.png" alt=""></a>
-                    <a href="https://whatsapp.com/channel/0029VaAQ6BdIiRp0P0NbhF15"><img src="Assets/whatsapp.png"
-                            alt=""></a>
-                    <a href="https://www.linkedin.com/company/geeksspire/"><img class="linkedin"
-                            src="Assets/linkedin.png" alt=""></a>
-                </div>
                 <div class="nav-copyright">copyright &copy; 2023 Geekspire. All rights reserved.</div>
             </div>
         </div>
@@ -162,4 +157,6 @@
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="script.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body></html>
