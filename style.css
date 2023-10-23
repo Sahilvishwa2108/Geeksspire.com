@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 html,body{
    height: 100%;
    width: 100%;
+
 }
 body {
     background: linear-gradient(-45deg, #3d241d, #000000, #06151a, #0a7976e3);
@@ -47,8 +49,7 @@ body {
     display: inline-block;
     margin-bottom: 55px;
     
-      font-size: 3rem;
-      text-indent: 1.5rem;
+      font-size: 50px;
       
 }
 
@@ -83,6 +84,7 @@ body {
 .graphic-design-card-article{
     display: flex;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
     width: 840px;
 }
 .graphic-design-card img{
@@ -112,7 +114,7 @@ body {
 .contact-text{
     position: relative;
     width: 840px;
-
+    font-family: 'Quicksand', sans-serif;
     overflow-y: hidden;
 }
 .contact-text p{
@@ -126,7 +128,12 @@ body {
 .contact-text i{
     margin-right: 1rem;
     margin-left: 1rem;
+    
 }
+.social-handles{
+    margin-left: 4rem;
+}
+
 .contact-text img{
     height: 100%;
     width: 28%;
@@ -169,6 +176,26 @@ footer{
     margin-bottom:45px;
 
 }
+.footer-logo{
+  
+    height: 9rem;
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.footer-logo img{
+    height: 80%;
+    width: 100%;
+}
+.social a i{
+    opacity: 100%;
+    color: #909090;
+    padding: 4px;
+    font-size: 1.3rem;
+    
+}
+
 
 .col-ele-head {
     padding-top: 12px;
