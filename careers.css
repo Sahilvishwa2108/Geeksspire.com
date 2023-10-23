@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.col-md-12 h1{
+    margin-top: 6rem ;
+    margin-bottom: 0%;
+    margin-left: 5rem;
+   
+}
+.careers-text{
+
+    color: aliceblue;
+    width: 83%;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 5rem;
+    margin-top: 1.4rem;
+    
+}
+
+#careers-container-id{
+    margin-top: 1rem;
+}
+.careers-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 8rem;
+    font-size: 25px;
+    color: rgba(255,255,255,0.7);
+    margin-left: 0rem;
+    width: 100%;
+   
+}
+
+ .careers-text p{
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    opacity: 75%;
+} 
+
+
+.careers-container img{
+    height: 100%;
+    width: 55%;
+    height: 30rem;
+    border: 1px solid white;
+    border-radius: 40px;
+    scale: 80%;
+}
+
+.caption{
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+.info{
+    margin: 1.2rem;
+    display: flex;
+    justify-content: left;
+    padding: 0%;
+    font-size: 1.7rem;
+
+}
+
+input[type="file"]{
+    display: block;
+    margin: 8px ;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(151, 144, 144);
+    font-weight: 550;
+    font-size: 15px;
+    padding:1px 0px;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+fieldset p{
+    font-size: 16px;
+    margin-left: 1.2rem;
+    margin-top: 0rem;
+    padding-bottom: 1.5rem;
+}
+
+#submit-button {
+    background-color: #a80101b5;
+    color: rgba(255, 255, 255, 0.619);
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 1rem;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 10px;
+  }
+
