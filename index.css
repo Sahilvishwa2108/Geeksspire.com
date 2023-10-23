@@ -114,13 +114,9 @@ body{
 }
 .service-border{
     background: none;
-    transition: background 0.5s ease-in-out 0s;
+    transition: border 0.3s ease-in-out 0s;
 }
-.service-border:hover{
-    padding: 2px;
-    background: linear-gradient(#14ffe9,#ffeb3b,#00bfff);
-    border-radius: 1.5rem;
-}
+
 .service{
     height: 20rem;
     width: 18rem;
@@ -130,6 +126,7 @@ body{
 }
 .service-image{
     overflow: hidden;
+  
 }
 .service-image img{
     object-fit: cover;
@@ -145,71 +142,27 @@ body{
 .service:hover .service-image{
     overflow: hidden;
 }
-.service span{
-    padding: 0.75rem 0;
-    position: relative;
-    bottom: 3rem;
-    display: flex;
-    justify-content: center;
-    color: rgba(255,255,255,0.7);
-}
-.social a img{
-    opacity: 0.4;
-    height: 3rem;
-    width: 3rem;
-    margin: 1rem 1rem;
-}
-.social a .linkedin{
-    /* height: 9rem;
-    width: 9rem;
-    padding-top: 0.5rem; */
-    transform: scale(1.15);
-}
 
-/***********Careers***************/
-
-#careers-container-id{
-    margin-top: 14rem;
+.works{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
 }
-.careers-container{
-    display: flex;
-    align-items: center;
-    margin-bottom: 8rem;
-    font-size: 25px;
-    color: rgba(255,255,255,0.7);
-    margin-left: 1rem;
-    width: 100%;
-   
+.work-image{
+    overflow: hidden;
 }
-.careers-container img{
-    height: 30rem;
-    border: 1px solid white;
-    border-radius: 40px;
-    scale: 80%;
-}
-.careers-text{
-    position: relative;
-    width: 840px;
-
+.work-image img{
+    object-fit: contain;
     overflow-y: hidden;
+    height: 20rem;
+    width: 16rem;
+    padding-left: 1rem;
+    transition: 0.4s ease-in 0s;      
 }
-.careers-text p{
-    margin-bottom: 2rem;
-    margin-right: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+.work-border:hover{
+    background: linear-gradient(#143bfff2,#0e1e03,#00bfffef);
+    border-radius: 1.5rem;
 }
-.careers-text i{
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-.careers-text img{
-    height: 100%;
-    width: 28%;
-}
-
 
 /* working on responsiveness */
 @media(max-width:600px){
