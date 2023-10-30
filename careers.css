@@ -104,3 +104,91 @@ fieldset p{
     border-radius: 10px;
   }
 
+
+
+  /* working on responsiveness */
+
+  @media (max-width: 768px) {
+    .col-md-12 h1 {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        text-align: center;
+    }
+
+    .careers-text {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .careers-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+        font-size: 18px;
+    }
+
+    .careers-container img {
+        width: 90%;
+        max-height: auto;
+    }
+
+    .info {
+        margin: 1rem;
+    }
+
+    input[type="file"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .caption {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .col-md-12 h1 {
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+
+    .careers-text {
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+    .careers-container {
+        font-size: 22px;
+        margin-left: 2rem;
+    }
+}
+
+/* Larger screens (e.g., desktops) */
+@media (min-width: 1025px) {
+    .col-md-12 h1 {
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+
+    .careers-text {
+        width: 83%;
+        margin-left: 5rem;
+    }
+
+    .careers-container {
+        margin-left: 0;
+    }
+
+    .info {
+        margin: 1.2rem;
+    }
+
+    input[type="file"] {
+        width: 400px;
+    }
+
+    .caption {
+        font-size: 2.5rem;
+    }
+}
